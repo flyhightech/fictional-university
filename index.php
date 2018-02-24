@@ -1,4 +1,9 @@
-This is our amazing website
+<?php
 
+    function greet($name, $color) {
+        echo "<p>Hello my $name is blank and my favorite $color is blank</p>";
+    }
 
-Getting things ready
+    greet('David', 'Green');
+    greet('Sara', 'Red')
+?>
