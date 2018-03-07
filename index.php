@@ -1,12 +1,22 @@
 <?php
 
+
+
 while(have_posts()){
     the_post(); ?>
-    <h2><?php the_title(); ?></h2>
+    <h2>
+        <a href="<?php the_permalink(); ?>">
+            <?php the_title(); ?>
+        </a>
+    </h2>
+
+    <h3>
+        <?php the_content(); ?>
+    </h3>
+
+    <hr>
+
     <?php
 }
 
 ?>
-
-
-<p>Hi, my name is <?php echo $name[2]?></p>
