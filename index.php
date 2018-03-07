@@ -1,6 +1,10 @@
 <?php
 
-$name = array('David', 'Ralph', 'Ester', 'Samuel');
+while(have_posts()){
+    the_post(); ?>
+    <h2><?php the_title(); ?></h2>
+    <?php
+}
 
 ?>
 
