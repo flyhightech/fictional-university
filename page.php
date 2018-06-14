@@ -24,7 +24,7 @@ while(have_posts()){
             <p><a class="metabox__blog-home-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Back to About Us</a> <span class="metabox__main">Our History</span></p>
         </div>
 
-        <!--
+        <!-- This is the sidebar menu
         <div class="page-links">
             <h2 class="page-links__title"><a href="#">About Us</a></h2>
             <ul class="min-list">
