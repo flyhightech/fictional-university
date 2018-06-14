@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!--This website was created by flyhightech -->
 
 <head>
     <?php wp_head(); ?>
