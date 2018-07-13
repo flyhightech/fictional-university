@@ -38,6 +38,15 @@ while(have_posts()){
 
             <!--      This is the sidebar menu     -->
 
+            <?php
+
+                $testArray = get_pages(array(
+
+                    'child_of' => get_the_ID()
+
+                ));
+
+                    if ($theParent or $testArray) {  ;?>
             <div class="page-links">
                 <h2 class="page-links__title">
                     <a href="<?php echo get_permalink($theParent);?>">
@@ -47,19 +56,22 @@ while(have_posts()){
                 <ul class="min-list">
                     <?php
 
-                            If ($theParent) {
+                        If ($theParent) {
                                 $findChildrenOf = $theParent;
                             } else {
                                 $findChildrenOf = get_the_ID();
                             }
 
-                        wp_list_pages(array(
-                        'title_li' => null,
-                        'child_of' => $findChildrenOf,
-                        ));
+                                wp_list_pages(array(
+                                'title_li' => null,
+                                'child_of' => $findChildrenOf,
+                                'sort_column' => 'menu_order'
+                                ));
+
                     ?>
                 </ul>
             </div>
+            <?php  } ?>
 
 
             <div class="generic-content">
