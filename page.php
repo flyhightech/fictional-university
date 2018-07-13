@@ -47,11 +47,12 @@ while(have_posts()){
                 <ul class="min-list">
                     <?php
 
-    If ($theParent) {
-        $findChildrenOf = $theParent;
-    } else {
-        $findChildrenOf = get_the_ID();
-    }
+                            If ($theParent) {
+                                $findChildrenOf = $theParent;
+                            } else {
+                                $findChildrenOf = get_the_ID();
+                            }
+
                         wp_list_pages(array(
                         'title_li' => null,
                         'child_of' => $findChildrenOf,
