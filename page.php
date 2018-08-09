@@ -47,14 +47,16 @@ while(have_posts()){
                 ));
 
                     if ($theParent or $testArray) {  ;?>
-            <div class="page-links">
-                <h2 class="page-links__title">
-                    <a href="<?php echo get_permalink($theParent);?>">
-                        <?php echo get_the_title($theParent); ?>
-                    </a>
-                </h2>
-                <ul class="min-list">
-                    <?php
+
+                <div class="page-links">
+                    <h2 class="page-links__title">
+                        <a href="<?php echo get_permalink($theParent); ?>">
+                            <?php echo get_the_title($theParent); ?>
+                        </a>
+                    </h2>
+
+                    <ul class="min-list">
+                        <?php
 
                         If ($theParent) {
                                 $findChildrenOf = $theParent;
@@ -69,14 +71,16 @@ while(have_posts()){
                                 ));
 
                     ?>
-                </ul>
-            </div>
-            <?php  } ?>
+                    </ul>
+
+                </div>
+
+                <?php  } ?>
 
 
-            <div class="generic-content">
-                <?php the_content(); ?>
-            </div>
+                <div class="generic-content">
+                    <?php the_content(); ?>
+                </div>
 
     </div>
 
