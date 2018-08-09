@@ -28,10 +28,14 @@ get_header();
                 </a>
             </h2>
 
+            <!--           The little box with the meta data is below         -->
+
             <div class="metabox">
                 <p>Posted by:
                     <?php the_author_posts_link() ;?> on
-                    <?php the_time("n.j.y"); ?> in News</p>
+                    <?php the_time("n.j.y"); ?> in
+                    <?php echo get_the_category_list(", "); ?>
+                </p>
             </div>
 
             <div class="generic-content">
