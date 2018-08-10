@@ -34,7 +34,7 @@ while(have_posts()){
 
             <?php }
 
-        ?>
+            ?>
 
             <!--      This is the sidebar menu     -->
 
