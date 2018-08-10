@@ -43,12 +43,10 @@ get_header();
                 <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue reading</a></p>
             </div>
 
-            <?php }
-    ?>
+            <?php } 
+                echo paginate_links();
+            ?>
+
         </div>
 
-        <?
-
-get_footer();
-
-?>;
+        <?php get_footer(); ?>;
