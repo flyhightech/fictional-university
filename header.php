@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html<?php language_attributes() ;?>>
+
     <!--This website was created by flyhightech -->
 
     <head>
@@ -23,7 +24,6 @@
                         <?php 
                         
                             wp_nav_menu(array(
-                            
                                 'theme_location' => 'headerMenuLocation'
                             ));
     
