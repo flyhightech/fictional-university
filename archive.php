@@ -9,9 +9,9 @@ get_header();
     <div class="page-banner__content container container--narrow">
         <h1 class="page-banner__title">
             <?php if (is_category()) {
-                echo "Category name will display here.";
+                single_cat_title();
             } if (is_author()) {
-                echo "Author name will appear here.";
+                echo 'Posts by: '; the_author();
             }?>
         </h1>
         <div class="page-banner__intro">
