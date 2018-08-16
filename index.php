@@ -17,14 +17,19 @@ get_header();
 </div>;
 
 <div class="container container--narrow page-section">
+
     <?php
         while(have_posts()) {
 
-            the_post(); ?>
+            the_post();
+    ?>
+
         <div class="post-item">
             <h2 class="headline headline--medium headline--post-title">
                 <a href="<?php the_permalink(); ?>">
-                    <?php the_title();?>
+                    <?php
+                        the_title();
+                    ?>
                 </a>
             </h2>
 
@@ -32,11 +37,13 @@ get_header();
 
             <div class="metabox">
                 <p>Posted by:
-                    <?php the_author_posts_link() ;?> on
+                    <?php the_author_posts_link(); ?> on
                     <?php the_time("n.j.y"); ?> in
                     <?php echo get_the_category_list(", "); ?>
                 </p>
             </div>
+
+            <!--           This is the blue continue reading button           -->
 
             <div class="generic-content">
                 <?php the_excerpt(); ?>
@@ -48,5 +55,8 @@ get_header();
             ?>
 
         </div>
+</div>
 
-        <?php get_footer(); ?>;
+<?php
+    get_footer();
+?>;
