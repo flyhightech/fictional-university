@@ -44,6 +44,14 @@
         <div class="full-width-split__inner">
             <h2 class="headline headline--small-plus t-center">From Our Blogs</h2>
 
+
+            <?php
+    $homePagePosts
+
+    while (have_posts()) {
+                the_posts();
+            }?>
+
             <div class="event-summary">
                 <a class="event-summary__date event-summary__date--beige t-center" href="#">
             <span class="event-summary__month">Jan</span>
