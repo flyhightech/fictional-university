@@ -46,12 +46,14 @@
 
 
             <?php
-    $homePagePosts = new WP_Query(array(
+    $homepagePosts = new WP_Query(array(
         'posts_per_page' => 2,
     ));
 
-    while ($homePagePosts->have_posts()) {
-                $homePagePosts->the_posts(); ?>
+//Creating a custom query
+
+    while ($homepagePosts->have_posts()) {
+                $homepagePosts->the_posts(); ?>
                 <div class="event-summary">
                     <a class="event-summary__date event-summary__date--beige t-center" href="<?php the_permalink() ;?>">
             <span class="event-summary__month"><?php the_time('M') ;?></span>
